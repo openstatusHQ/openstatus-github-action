@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-if [ -z "$INPUT_API_KEY" ]; then
+if [ -z "$INPUT_CONFIG_PATH" ]; then
     /home/openstatus/openstatus run --access-token $INPUT_API_KEY
 else
     /home/openstatus/openstatus run --access-token $INPUT_API_KEY --config $INPUT_CONFIG_PATH
