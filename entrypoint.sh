@@ -2,6 +2,6 @@
 
 ls
 
-./openstatus whoami --access-token $INPUT_API_KEY
+/home/openstatus/openstatus run --access-token $INPUT_API_KEY
 
 exit 0
