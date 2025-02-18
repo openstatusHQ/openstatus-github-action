@@ -1,6 +1,9 @@
 name: 'OpenStatus Synthetics CI'
 description: 'Run your OpenStatus synthetics checks as part of your GitHub Actions workflow.'
 author: 'OpenStatus'
+branding:
+  icon: 'zap'
+  color: gray-dark
 
 inputs:
   api_key:
