@@ -1,0 +1,18 @@
+name: 'OpenStatus Synthetics CI'
+description: 'Run your OpenStatus synthetics checks as part of your GitHub Actions workflow.'
+author: 'OpenStatus'
+
+inputs:
+  api_key:
+    description: 'OpenStatus API key'
+    required: true
+  config_path:
+    description: 'Path to the OpenStatus configuration file'
+    required: false
+
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.api_key }}
+    - ${{ inputs.config_path }}
