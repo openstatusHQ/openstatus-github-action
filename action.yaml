@@ -15,7 +15,7 @@ inputs:
 
 runs:
   using: docker
-  image: Dockerfile
+  image: docker://ghcr.io/openstatushq/action:latest
   args:
     - ${{ inputs.api_key }}
     - ${{ inputs.config_path }}
